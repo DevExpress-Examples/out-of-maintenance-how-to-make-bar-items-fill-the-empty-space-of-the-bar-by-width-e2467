@@ -1,3 +1,12 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [BarItemPair.cs](./CS/SpringStyleItem/BarItemPair.cs) (VB: [BarItemPair.vb](./VB/SpringStyleItem/BarItemPair.vb))
+* [Form1.cs](./CS/SpringStyleItem/Form1.cs) (VB: [Form1.vb](./VB/SpringStyleItem/Form1.vb))
+* [MyBarAndDockingController.cs](./CS/SpringStyleItem/MyBarAndDockingController.cs) (VB: [MyBarAndDockingController.vb](./VB/SpringStyleItem/MyBarAndDockingController.vb))
+* [MyDockedBarControlViewInfo.cs](./CS/SpringStyleItem/MyDockedBarControlViewInfo.cs) (VB: [MyDockedBarControlViewInfo.vb](./VB/SpringStyleItem/MyDockedBarControlViewInfo.vb))
+* [Program.cs](./CS/SpringStyleItem/Program.cs) (VB: [Program.vb](./VB/SpringStyleItem/Program.vb))
+<!-- default file list end -->
 # How to make bar items fill the empty space of the bar by width
 
 
