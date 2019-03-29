@@ -1,5 +1,4 @@
-﻿Imports Microsoft.VisualBasic
-Imports System.Collections
+﻿Imports System.Collections
 Imports DevExpress.XtraBars
 
 Namespace SpringStyleItem
@@ -31,6 +30,7 @@ Namespace SpringStyleItem
 
 	Public Class BarItemCollection
 		Inherits CollectionBase
+
 		Private ownerController As MyBarAndDockingController = Nothing
 
 		Public Sub New(ByVal controller As MyBarAndDockingController)
@@ -78,7 +78,7 @@ Namespace SpringStyleItem
 
 		Default Public Property Item(ByVal index As Integer) As BarItemPair
 			Get
-				Return CType(List(index), BarItemPair)
+				Return DirectCast(List(index), BarItemPair)
 			End Get
 			Set(ByVal value As BarItemPair)
 				List(index) = value

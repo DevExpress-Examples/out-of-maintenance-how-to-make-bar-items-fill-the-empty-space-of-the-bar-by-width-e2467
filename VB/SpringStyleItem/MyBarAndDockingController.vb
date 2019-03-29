@@ -1,11 +1,12 @@
-﻿Imports Microsoft.VisualBasic
-Imports System.ComponentModel
+﻿Imports System.ComponentModel
 Imports DevExpress.XtraBars
 Imports DevExpress.XtraBars.Styles
 
 Namespace SpringStyleItem
 	Public Class MyBarAndDockingController
 		Inherits BarAndDockingController
+
+'INSTANT VB NOTE: The field springStyleItems was renamed since Visual Basic does not allow fields to have the same name as other class members:
 		Private springStyleItems_Renamed As BarItemCollection
 
 		Public Sub New(ByVal container As IContainer)
@@ -47,7 +48,7 @@ Namespace SpringStyleItem
 			Next paintStyle
 		End Sub
 
-		<DesignerSerializationVisibility(DesignerSerializationVisibility.Content)> _
+		<DesignerSerializationVisibility(DesignerSerializationVisibility.Content)>
 		Public ReadOnly Property SpringStyleItems() As BarItemCollection
 			Get
 				Return springStyleItems_Renamed

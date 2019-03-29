@@ -1,6 +1,4 @@
-﻿Imports Microsoft.VisualBasic
-Imports System
-Namespace SpringStyleItem
+﻿Namespace SpringStyleItem
 	Partial Public Class Form1
 		''' <summary>
 		''' Required designer variable.
@@ -55,7 +53,11 @@ Namespace SpringStyleItem
 			Me.bar1.DockCol = 0
 			Me.bar1.DockRow = 0
 			Me.bar1.DockStyle = DevExpress.XtraBars.BarDockStyle.Top
-			Me.bar1.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() { New DevExpress.XtraBars.LinkPersistInfo(Me.barButtonItem1), New DevExpress.XtraBars.LinkPersistInfo(Me.barCheckItem1), New DevExpress.XtraBars.LinkPersistInfo(Me.barStaticItem1)})
+			Me.bar1.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() {
+				New DevExpress.XtraBars.LinkPersistInfo(Me.barButtonItem1),
+				New DevExpress.XtraBars.LinkPersistInfo(Me.barCheckItem1),
+				New DevExpress.XtraBars.LinkPersistInfo(Me.barStaticItem1)
+			})
 			Me.bar1.OptionsBar.UseWholeRow = True
 			Me.bar1.Text = "Tools"
 			' 
@@ -83,7 +85,10 @@ Namespace SpringStyleItem
 			Me.bar2.DockCol = 0
 			Me.bar2.DockRow = 1
 			Me.bar2.DockStyle = DevExpress.XtraBars.BarDockStyle.Top
-			Me.bar2.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() { New DevExpress.XtraBars.LinkPersistInfo(Me.barCheckItem2), New DevExpress.XtraBars.LinkPersistInfo(Me.barLinkContainerItem1)})
+			Me.bar2.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() {
+				New DevExpress.XtraBars.LinkPersistInfo(Me.barCheckItem2),
+				New DevExpress.XtraBars.LinkPersistInfo(Me.barLinkContainerItem1)
+			})
 			Me.bar2.OptionsBar.UseWholeRow = True
 			Me.bar2.Text = "Custom 3"
 			' 
@@ -105,7 +110,10 @@ Namespace SpringStyleItem
 			Me.bar3.DockCol = 0
 			Me.bar3.DockRow = 2
 			Me.bar3.DockStyle = DevExpress.XtraBars.BarDockStyle.Top
-			Me.bar3.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() { New DevExpress.XtraBars.LinkPersistInfo(Me.barButtonItem2), New DevExpress.XtraBars.LinkPersistInfo(Me.barSubItem1)})
+			Me.bar3.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() {
+				New DevExpress.XtraBars.LinkPersistInfo(Me.barButtonItem2),
+				New DevExpress.XtraBars.LinkPersistInfo(Me.barSubItem1)
+			})
 			Me.bar3.OptionsBar.UseWholeRow = True
 			Me.bar3.Text = "Custom 4"
 			' 
@@ -132,11 +140,11 @@ Namespace SpringStyleItem
 			Me.barManager1.Form = Me
 			Me.barManager1.Items.AddRange(New DevExpress.XtraBars.BarItem() { Me.barButtonItem1, Me.barCheckItem1, Me.barCheckItem2, Me.barStaticItem1, Me.barLinkContainerItem1, Me.barButtonItem2, Me.barSubItem1})
 			Me.barManager1.MaxItemId = 8
-            ' 
-            ' myBarAndDockingController1
-            ' 
-            Me.myBarAndDockingController1.PropertiesBar.AllowLinkLighting = False
-            barItemPair1.Bar = Me.bar1
+			' 
+			' myBarAndDockingController1
+			' 
+			Me.myBarAndDockingController1.PropertiesBar.AllowLinkLighting = False
+			barItemPair1.Bar = Me.bar1
 			barItemPair1.BarItem = Me.barButtonItem1
 			barItemPair2.Bar = Me.bar2
 			barItemPair2.BarItem = Me.barCheckItem2
