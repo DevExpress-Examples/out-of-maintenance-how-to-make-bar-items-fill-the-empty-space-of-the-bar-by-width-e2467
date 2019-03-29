@@ -11,23 +11,26 @@ namespace SpringStyleItem
 		public MyBarAndDockingController(IContainer container)
 			: base(container)
 		{
-			ChangeDockedBarControlViewInfo();
-		}
+            Init();
+        }
 		public MyBarAndDockingController()
 			: base()
-		{
-			ChangeDockedBarControlViewInfo();
-		}
+        {
+            Init();
+        }
 
-		protected internal new void OnChanged()
+        private void Init()
+        {
+            springStyleItems = new BarItemCollection(this);
+        }
+
+        protected internal new void OnChanged()
 		{
 			base.OnChanged();
 		}
 
-		private void ChangeDockedBarControlViewInfo()
+        public void AddBarControlInfo()
 		{
-			springStyleItems = new BarItemCollection(this);
-
 			foreach ( BarManagerPaintStyle paintStyle in this.PaintStyles )
 			{
 				BarControlInfo info = paintStyle.BarInfoCollection["DockedBarControl"];
